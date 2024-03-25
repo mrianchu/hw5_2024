@@ -177,6 +177,8 @@ Edit the css for the pricing class to match our example. You should use flex and
     .card li:nth-of-type(2)::after {
         content: '\1F44D'; 
       }
+
+    /*make sure footer is on 2nd page when in print display to match example*/
     footer {
         page-break-before: always;
     }
