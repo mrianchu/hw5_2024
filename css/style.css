@@ -146,21 +146,24 @@ Edit the css for the pricing class to match our example. You should use flex and
     }
     
     /* Edit nav_links elements for spacing */
-    .nav {
-        width: 100%; 
+    nav {
+        width: 80%;
     }
+
     .nav_links {
-        display: flex;
-        justify-content: space-between;
+        align-items: flex-end;
         flex-direction: row;
+        justify-content: space-between;
     }
+
     
     /*Edit pricing class for alignment along the bottom*/
     .pricing {
         display: flex;
-        justify-content: flex-end;
+        flex-direction: row;
         align-items: flex-end;
     }
+
     
     /*The card elements should have a solid border 2px of #45ADDD and use flex-basis of 325px. */
     .card {
