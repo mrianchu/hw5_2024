@@ -12,7 +12,7 @@
   
   /* Apply animation to the logo element */
 #logo {
-    animation: animateLogo 5s forwards; /* Animation lasts 5 seconds and persists after it finishes */
+    animation: animateLogo 5s forwards; 
 }
 
 /*Edit the body element to use the Poppins font (using Google fonts) with serif as a backup.  It should also use the image “concrete_seamless.png” as a background-image with a backup color of #f1f1f1.*/
@@ -134,8 +134,11 @@ Edit the css for the pricing class to match our example. You should use flex and
     }
 }
 
+
+/*The following specifications are for when the page is printed in portrait mode. 
+*/
 @media print and (orientation: portrait) {
-    /* Change font to Arial with a backup of Helvetica */
+    /* Change font to Arial with a backup of Helvetica and remove background image*/
     body {
         font-family: Arial, Helvetica;
         background-image: none;
@@ -145,7 +148,6 @@ Edit the css for the pricing class to match our example. You should use flex and
     /* Edit nav_links elements for spacing */
     .nav {
         width: 100%; 
-        
     }
     .nav_links {
         display: flex;
@@ -170,7 +172,7 @@ Edit the css for the pricing class to match our example. You should use flex and
     .gallery, #gallery {
         display: none;
     }
-    
+
     /*Without using list-style-type add the thumbs up entity as shown in the cards.*/
     .card li:nth-of-type(2)::after {
         content: '\1F44D'; 
